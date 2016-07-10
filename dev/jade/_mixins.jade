@@ -1,0 +1,23 @@
+
+mixin list(items, className, active)
+    div(class="#{className}")
+        ul(class="#{className}__list")
+            each item, key in items
+                if key == active
+                    li(class="#{className}__item #{className}__item--active")
+                        a(href="#" class="#{className}__link")= item
+                else
+                    li(class="#{className}__item")
+                        a(href="#" class="#{className}__link")= item
+
+
+
+
+
+
+mixin list-mod(items, className, id, mod)
+    div(class="#{className}")
+        ul(class="#{className}__list")
+            each item in items
+                li(class="#{className}__item")
+                    a(href="#" class="#{className}__link")= item

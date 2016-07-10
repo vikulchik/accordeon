@@ -1,0 +1,67 @@
+.accordeon {
+  width: 460px;
+  min-height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+
+  &_link {
+    display: block;
+  }
+  &_logo {
+    margin: auto;
+    width: 216px;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main_item {
+  margin-bottom: 5px;
+}
+
+.main_link {
+  width: 100%;
+  padding: 15px;
+  font-family: "Fira Sana", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.item {
+  font-family: "Fira Sana", sans-serif;
+  font-weight: 300;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.link-first {
+  background: #696666;
+}
+
+.link-second {
+  background: #e7e7e7;
+  color: #696666;
+}
+
+.list {
+  padding: 15px;
+  background: #e7e7e7;
+  width: 100%;
+  display: none;
+  box-sizing: border-box;
+}
+
+.active {
+  display: block;
+}
